@@ -3,14 +3,26 @@
   padding: 0;
 }
 
+.text-center, .intro, .brand, .product, .contact {
+  text-align: center;
+  line-height: 100vh;
+}
+
 .nav {
+  width: 100vw;
   text-align: center;
   background: red;
-  position: sticky;
+  position: fixed;
+  z-index: 9;
+  box-shadow: 0px 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .nav .title {
   padding: 5px;
+}
+
+.nav .title .reg {
+  font-size: 10px;
 }
 
 .nav .link {
@@ -27,6 +39,12 @@
 .intro {
   background: yellow;
   height: 100vh;
+  padding-top: 81px;
+}
+
+.brand {
+  background-color: #fff;
+  height: 100vh;
 }
 
 .product {
@@ -37,4 +55,5 @@
 .contact {
   height: 30vh;
   background: aquamarine;
+  line-height: 30vh;
 }

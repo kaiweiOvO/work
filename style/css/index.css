@@ -11,7 +11,7 @@
 .nav {
   width: 100vw;
   text-align: center;
-  background: greenyellow;
+  background: #ADFF2F;
   position: fixed;
   z-index: 9;
   box-shadow: 0px 0 10px 1px rgba(0, 0, 0, 0.3);
@@ -34,11 +34,12 @@
 .nav .link li {
   line-height: 2.5rem;
   flex: 1;
+  transition: .3s;
 }
 
 .nav .link li :hover {
-  padding-bottom: 2px;
-  color: honeydew;
+  transition: .3s;
+  border-bottom: 3px solid honeydew;
 }
 
 .nav .link li a {

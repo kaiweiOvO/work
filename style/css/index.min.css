@@ -1,0 +1,1 @@
+*{margin:0;padding:0}.nav{text-align:center;background:red}.nav .title{padding:5px}.nav .link{width:100%;display:flex;list-style:none}.nav .link li{line-height:2.5rem;flex:1}.intro{background:yellow;height:100vh}.product{height:100vh;background:aqua}.contact{height:30vh;background:aquamarine}

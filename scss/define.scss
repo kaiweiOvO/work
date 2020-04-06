@@ -1,4 +1,8 @@
-.text-center {
+.text {
     text-align: center;
-    line-height: 100vh;
+    overflow: hidden;
 }
+
+$main-white: floralWhite;
+$main-green: mediumseagreen;
+$main-font-color: #333;

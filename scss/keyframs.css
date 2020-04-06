@@ -1,0 +1,4 @@
+@keyframes fade-in {
+    from {top: 100%; opacity: 0;}
+    to {top: 50%; opacity: 1;}
+}

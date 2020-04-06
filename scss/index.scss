@@ -35,10 +35,8 @@ body {
             line-height: 2.5rem;
             -webkit-box-flex: 1;
                     flex: 1;
-            :hover {
-                -webkit-transition: .3s;
-                transition: .3s;
-                border-bottom: 3px solid honeydew;
+            &:hover {
+                border-bottom: 2px solid #333;
             }
             a {
                 text-decoration: none;

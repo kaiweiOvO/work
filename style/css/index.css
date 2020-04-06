@@ -45,10 +45,8 @@ body {
   flex: 1;
 }
 
-.nav .link li :hover {
-  -webkit-transition: .3s;
-  transition: .3s;
-  border-bottom: 3px solid honeydew;
+.nav .link li:hover {
+  border-bottom: 2px solid #333;
 }
 
 .nav .link li a {

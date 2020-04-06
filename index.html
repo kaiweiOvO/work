@@ -4,37 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/css/index.css">
-    <link rel="stylesheet" href="./scss/keyframs.css">
+    <link rel="stylesheet" href="./style/css/index.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">  
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>  
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body id="home">
     <nav id="nav" class="nav">
         <h2 class="title">金大地米业<span class="reg">&reg;</span></h2>
         <ul class="link">
-            <li><a href="#factory">厂区风貌</a></li>|
-            <li><a href="#intro">公司简介</a></li>|
-            <li><a href="#brand">旗下品牌</a></li>|
-            <li><a href="#product">产品服务</a></li>|
+            <li><a href="#intro">公司简介</a></li>
+            <li><a href="#brand">旗下品牌</a></li>
+            <li><a href="#factory">厂区风貌</a></li>
+            <li><a href="#workshop">生产车间</a></li>
+            <li><a href="#product">产品服务</a></li>
             <li><a href="#contact">联系方式</a></li>
         </ul>
     </nav>
     <section id="intro" class="intro">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+            </div>
+        </div>
         <div class="content">
             <div class="titleBg">
                 <h2>公司简介</h2>
             </div>
             <p>&nbsp; &nbsp; &nbsp; &nbsp;<span class="bold">安徽金大地</span>米业有限公司成立于2016年，投资总资产达3500万元，占地约28000平方米，是一家集粮食收购、销售、储备、加工等业务于一体的综合性粮食加工企业，本公司秉持着：“诚信为本，信誉第一”的经营理念，锐意进取，阔步前行。</p>
         </div>
+        </div>
     </section>
     <section id="brand" class="brand">
-        <h2>品牌</h2>
+        <div class="titleBg">
+            <h2>旗下品牌</h2>
+        </div>
+    </section>
+    <section id="factory" class="brand">
+        <div class="titleBg">
+            <h2>厂区风貌</h2>
+        </div>
+    </section>
+    <section id="workshop" class="brand">
+        <div class="titleBg">
+            <h2>生产车间</h2>
+        </div>
     </section>
     <section id="product" class="product">
-        <h2>产品</h2>
+        <div class="titleBg">
+            <h2>产品服务</h2>
+        </div>
     </section>
     <footer id="contact" class="contact">
-        <h2>联系</h2>
+        <div class="titleBg">
+            <h2>联系我们</h2>
+        </div>
     </footer>
 </body>
 </html>

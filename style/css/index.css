@@ -3436,6 +3436,7 @@ body {
   text-align: center;
   width: 360px;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 
 .contact .contact-wrapper .contact-item:hover a i {
@@ -3483,6 +3484,15 @@ body {
 
 .contact .contact-wrapper .contact-item a p {
   color: #999;
+}
+
+.contact .copyright {
+  padding: 50px 0;
+  color: #333;
+}
+
+.contact .sign {
+  color: mediumaquamarine;
 }
 
 @media screen and (max-width: 1024px) {

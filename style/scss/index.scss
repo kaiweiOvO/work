@@ -105,6 +105,7 @@ body {
             text-align: center;
             width: 360px;
             padding-bottom: 20px;
+            cursor: pointer;
             &:hover a i{
                 background-color: $main-green;
                 color: $main-white;
@@ -148,8 +149,13 @@ body {
             }
         }
     }
-    
-
+    .copyright {
+        padding: 50px 0;
+        color: #333;
+    }
+    .sign {
+        color: mediumaquamarine;
+    }
 }
 
 @import './media.scss'

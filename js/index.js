@@ -7,4 +7,9 @@ window.onload = function() {
             delay: 3000
         }
     })
+
+    $('.bars-bt').on('click',()=>{
+        $('.bars').toggleClass('in')
+    });
+
 }

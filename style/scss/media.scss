@@ -1,3 +1,5 @@
+@import './define.scss';
+
 @media screen and (max-width: 1024px){
     .contact-item {
         width: 100% !important;
@@ -5,16 +7,30 @@
     }
 }
 @media screen and (max-width: 640px){
+    .bars{
+        display: block !important;
+        height: calc(100ch - 51px);
+        top: 51px;
+        left: 100vw;
+        position: absolute;
+        background: $main-white;
+        li {
+            display: block;
+            width: 80%;
+            border-bottom: 1px solid rgba($color: $main-green, $alpha: .3);
+            margin: auto;
+            &:hover {
+                border-bottom: 1px solid rgba($color: $main-green, $alpha: .3) !important;
+            }
+        }
+    }
+    .bars-bt {
+        display: block !important;
+    }
     .title {
         margin-left: 10px !important;
     }
     .intro {
         padding-top: 51px !important;
-    }
-    .bars-bt {
-        display: block !important;
-    }
-    .bars {
-        display: none !important;
     }
 }

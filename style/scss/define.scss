@@ -8,6 +8,10 @@
     transition: all .7s ease-in;
 }
 
+.in {
+    left: 0 !important;
+}
+
 $main-white: floralWhite;
 $main-green: mediumseagreen;
 $main-font-color: #333;

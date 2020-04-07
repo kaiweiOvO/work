@@ -7,3 +7,7 @@
   overflow: hidden;
   transition: all .7s ease-in;
 }
+
+.in {
+  left: 0 !important;
+}

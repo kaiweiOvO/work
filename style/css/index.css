@@ -8,6 +8,10 @@
   transition: all .7s ease-in;
 }
 
+.in {
+  left: 0 !important;
+}
+
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.2
@@ -3516,6 +3520,20 @@ body {
   color: mediumaquamarine;
 }
 
+* {
+  transition: all .5s ease;
+}
+
+.text, .intro, .brand, .product, .contact {
+  text-align: center;
+  overflow: hidden;
+  transition: all .7s ease-in;
+}
+
+.in {
+  left: 0 !important;
+}
+
 @media screen and (max-width: 1024px) {
   .contact-item {
     width: 100% !important;
@@ -3524,16 +3542,30 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+  .bars {
+    display: block !important;
+    height: calc(100ch - 51px);
+    top: 51px;
+    left: 100vw;
+    position: absolute;
+    background: floralWhite;
+  }
+  .bars li {
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid rgba(60, 179, 113, 0.3);
+    margin: auto;
+  }
+  .bars li:hover {
+    border-bottom: 1px solid rgba(60, 179, 113, 0.3) !important;
+  }
+  .bars-bt {
+    display: block !important;
+  }
   .title {
     margin-left: 10px !important;
   }
   .intro {
     padding-top: 51px !important;
-  }
-  .bars-bt {
-    display: block !important;
-  }
-  .bars {
-    display: none !important;
   }
 }

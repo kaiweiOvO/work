@@ -1,3 +1,13 @@
+* {
+  transition: all .5s ease;
+}
+
+.text {
+  text-align: center;
+  overflow: hidden;
+  transition: all .7s ease-in;
+}
+
 @media screen and (max-width: 1024px) {
   .contact-item {
     width: 100% !important;
@@ -6,16 +16,30 @@
 }
 
 @media screen and (max-width: 640px) {
+  .bars {
+    display: block !important;
+    height: calc(100ch - 51px);
+    top: 51px;
+    left: 100vw;
+    position: absolute;
+    background: floralWhite;
+  }
+  .bars li {
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid rgba(60, 179, 113, 0.3);
+    margin: auto;
+  }
+  .bars li:hover {
+    border-bottom: 1px solid rgba(60, 179, 113, 0.3) !important;
+  }
+  .bars-bt {
+    display: block !important;
+  }
   .title {
     margin-left: 10px !important;
   }
   .intro {
     padding-top: 51px !important;
-  }
-  .bars-bt {
-    display: block !important;
-  }
-  .bars {
-    display: none !important;
   }
 }

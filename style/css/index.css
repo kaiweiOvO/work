@@ -1,5 +1,5 @@
 * {
-  transition: all .7s ease;
+  transition: all .5s ease;
 }
 
 .text, .intro, .brand, .product, .contact {
@@ -3379,10 +3379,12 @@ body {
   line-height: 2.5rem;
   -webkit-box-flex: 1;
   flex: 1;
+  transition: none;
 }
 
 .nav .bars li:hover {
   border-bottom: 2px solid mediumseagreen;
+  transition: none;
 }
 
 .nav .bars li a {

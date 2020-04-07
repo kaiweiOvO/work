@@ -1,0 +1,23 @@
+.content {
+    width: 80vw;
+    max-width: 1080px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    animation: fadeInUp 1s forwards;
+}
+    
+.titleBg {
+    line-height: 4rem;
+    // padding: 0 30px;
+    width: 280px;
+    background: url(../../resource/titleBg.gif) no-repeat left center;
+    background-size: auto 300%;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 20px;
+    color: $main-green;
+}

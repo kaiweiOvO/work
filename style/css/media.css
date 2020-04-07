@@ -4,3 +4,18 @@
     float: left;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .title {
+    margin-left: 10px !important;
+  }
+  .intro {
+    padding-top: 51px !important;
+  }
+  .bars-bt {
+    display: block !important;
+  }
+  .bars {
+    display: none !important;
+  }
+}

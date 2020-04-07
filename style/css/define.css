@@ -1,3 +1,7 @@
+* {
+  transition: all .7s ease;
+}
+
 .text {
   text-align: center;
   overflow: hidden;

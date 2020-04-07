@@ -1,3 +1,7 @@
+* {
+  transition: all .7s ease;
+}
+
 .text, .intro, .brand, .product, .contact {
   text-align: center;
   overflow: hidden;
@@ -3346,13 +3350,23 @@ body {
   padding: 10px 10px;
   text-align: center;
   color: mediumseagreen;
+  width: fit-content;
+  margin-left: calc((100vw - 142.7px) / 2);
 }
 
 .nav .title .reg {
   font-size: 10px 10px;
 }
 
-.nav .link {
+.nav .bars-bt {
+  position: absolute;
+  height: 31px;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+
+.nav .bars {
   width: 100%;
   display: -webkit-box;
   line-height: 2.5rem;
@@ -3361,17 +3375,17 @@ body {
   text-align: center;
 }
 
-.nav .link li {
+.nav .bars li {
   line-height: 2.5rem;
   -webkit-box-flex: 1;
   flex: 1;
 }
 
-.nav .link li:hover {
-  border-bottom: 2px solid #333;
+.nav .bars li:hover {
+  border-bottom: 2px solid mediumseagreen;
 }
 
-.nav .link li a {
+.nav .bars li a {
   text-decoration: none;
   color: #000;
 }
@@ -3428,7 +3442,7 @@ body {
   max-width: 1160px;
   margin: auto;
   list-style: none;
-  padding: 30px 0;
+  padding: 50px 0 30px;
 }
 
 .contact .contact-wrapper .contact-item {
@@ -3492,7 +3506,7 @@ body {
 }
 
 .contact .copyright {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   color: #333;
 }
 
@@ -3504,5 +3518,20 @@ body {
   .contact-item {
     width: 100% !important;
     float: left;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    margin-left: 10px !important;
+  }
+  .intro {
+    padding-top: 51px !important;
+  }
+  .bars-bt {
+    display: block !important;
+  }
+  .bars {
+    display: none !important;
   }
 }

@@ -21,13 +21,20 @@ body {
         padding: 10px 10px;
         text-align: center;
         color: $main-green;
-        // width: fit-content;
-        // margin-left: calc((100vw - 142.7px) / 2);
+        width: fit-content;
+        margin-left: calc((100vw - 142.7px) / 2);
         .reg {
             font-size:10px 10px;
         }
     }
-    .link {
+    .bars-bt {
+        position: absolute;
+        height: 31px;
+        top: 10px;
+        right: 10px;
+        display: none;
+    }
+    .bars {
         width: 100%;
         display: -webkit-box;
         line-height: 2.5rem;
@@ -39,7 +46,7 @@ body {
             -webkit-box-flex: 1;
                     flex: 1;
             &:hover {
-                border-bottom: 2px solid #333;
+                border-bottom: 2px solid $main-green;
             }
             a {
                 text-decoration: none;
@@ -51,7 +58,6 @@ body {
 .intro {
     background-size: cover;
     height: auto;
-    // height: auto;
     padding-top: 91px;
     color: $main-font-color;
     .swiper-container {
@@ -99,7 +105,7 @@ body {
         max-width: 1160px;
         margin: auto;
         list-style: none;
-        padding: 30px 0;
+        padding: 50px 0 30px;
         .contact-item {
             display: block;
             text-align: center;
@@ -149,7 +155,7 @@ body {
         }
     }
     .copyright {
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         color: #333;
     }
     .sign {

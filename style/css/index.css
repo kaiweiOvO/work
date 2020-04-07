@@ -3383,7 +3383,7 @@ body {
 }
 
 .nav .bars li:hover {
-  border-bottom: 2px solid mediumseagreen;
+  border-bottom: 3px solid mediumseagreen;
   transition: none;
 }
 

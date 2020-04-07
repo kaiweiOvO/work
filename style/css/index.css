@@ -3482,12 +3482,17 @@ body {
   left: -4px;
 }
 
+.contact .contact-wrapper .contact-item a div {
+  padding: 5px 0;
+}
+
 .contact .contact-wrapper .contact-item a p {
   color: #999;
+  padding: 5px 0;
 }
 
 .contact .copyright {
-  padding: 50px 0;
+  padding-bottom: 40px;
   color: #333;
 }
 

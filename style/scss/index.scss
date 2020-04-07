@@ -10,7 +10,7 @@ body {
     width: 100vw;
     position: fixed;
     z-index: 9;
-    box-shadow: 0px 0 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background: $main-white;
     color: $main-font-color;
     // &:hover > .title {
@@ -41,6 +41,7 @@ body {
         display: flex;
         list-style: none;
         text-align: center;
+        overflow: hidden;
         li {
             line-height: 2.5rem;
             -webkit-box-flex: 1;

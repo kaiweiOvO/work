@@ -8,6 +8,10 @@
   transition: all .7s ease-in;
 }
 
+.in {
+  left: 0 !important;
+}
+
 @media screen and (max-width: 1024px) {
   .contact-item {
     width: 100% !important;
@@ -18,11 +22,12 @@
 @media screen and (max-width: 640px) {
   .bars {
     display: block !important;
-    height: calc(100ch - 51px);
+    height: calc(100vh - 51px);
     top: 51px;
     left: 100vw;
     position: absolute;
     background: floralWhite;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   }
   .bars li {
     display: block;

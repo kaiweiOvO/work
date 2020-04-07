@@ -9,11 +9,12 @@
 @media screen and (max-width: 640px){
     .bars{
         display: block !important;
-        height: calc(100ch - 51px);
+        height: calc(100vh - 51px);
         top: 51px;
         left: 100vw;
         position: absolute;
         background: $main-white;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
         li {
             display: block;
             width: 80%;

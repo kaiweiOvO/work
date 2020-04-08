@@ -10,11 +10,11 @@ window.onload = function() {
         }
     })
 
+    $('.bars-bt').on('click', ()=>{
+        $('.bars').toggleClass('in')
+    });
 }
 
-$('.bars-bt').on('click', ()=>{
-    $('.bars').toggleClass('in')
-});
 
 $(window).on('scroll', ()=>{
     if(window.scrollY > scrollY)

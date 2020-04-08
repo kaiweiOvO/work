@@ -5,11 +5,25 @@
 .text, .intro, .brand, .product, .contact {
   text-align: center;
   overflow: hidden;
-  transition: all .7s ease-in;
 }
 
 .in {
   left: 0 !important;
+}
+
+.title-left {
+  margin-left: 0 !important;
+  border-radius: 0 20px 20px 0 !important;
+}
+
+.bars-right {
+  width: 80% !important;
+  right: 0;
+  top: 9px !important;
+}
+
+.prop-close {
+  height: 0 !important;
 }
 
 /*!
@@ -3316,11 +3330,25 @@
 .text, .intro, .brand, .product, .contact {
   text-align: center;
   overflow: hidden;
-  transition: all .7s ease-in;
 }
 
 .in {
   left: 0 !important;
+}
+
+.title-left {
+  margin-left: 0 !important;
+  border-radius: 0 20px 20px 0 !important;
+}
+
+.bars-right {
+  width: 80% !important;
+  right: 0;
+  top: 9px !important;
+}
+
+.prop-close {
+  height: 0 !important;
 }
 
 .title-wrapper {
@@ -3370,8 +3398,7 @@ body::-webkit-scrollbar {
   position: fixed;
   z-index: 9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background: floralWhite;
-  color: #333;
+  background: mediumseagreen;
 }
 
 .nav a {
@@ -3380,33 +3407,42 @@ body::-webkit-scrollbar {
 
 .nav .title {
   padding: 10px 10px;
+  z-index: 100;
   text-align: center;
   color: mediumseagreen;
+  background-color: floralWhite;
+  border-radius: 0 0 20px 20px;
   width: fit-content;
   margin-left: calc((100vw - 142.7px) / 2);
+  position: relative;
 }
 
 .nav .title .reg {
-  font-size: 10px 10px;
+  font-size: 10px;
 }
 
 .nav .bars-bt {
   position: absolute;
-  height: 31px;
+  height: 29px;
   top: 10px;
   right: 10px;
   display: none;
+  color: floralWhite;
   cursor: pointer;
 }
 
 .nav .bars {
-  width: 100%;
+  width: 100vw;
+  background-color: mediumseagreen;
   display: -webkit-box;
   line-height: 2.5rem;
   display: flex;
   list-style: none;
   text-align: center;
   overflow: hidden;
+  position: absolute;
+  top: 51px;
+  right: 0;
 }
 
 .nav .bars li {
@@ -3417,24 +3453,30 @@ body::-webkit-scrollbar {
 }
 
 .nav .bars li:hover {
-  border-bottom: 3px solid mediumseagreen;
+  border-bottom: 2px solid floralWhite;
   transition: none;
 }
 
 .nav .bars li a {
   text-decoration: none;
-  color: #000;
+  color: floralWhite;
+}
+
+.nav .prop {
+  background-color: mediumseagreen;
+  height: 42px;
 }
 
 .intro {
   background-size: cover;
   height: auto;
-  padding-top: 91px;
+  padding-top: 51px;
   color: #333;
 }
 
 .intro .swiper-container {
   width: 100%;
+  background-color: #000;
   max-height: 607px;
   height: calc(100vw * 0.5625);
   text-align: center;
@@ -3563,14 +3605,32 @@ body::-webkit-scrollbar {
 .text, .intro, .brand, .product, .contact {
   text-align: center;
   overflow: hidden;
-  transition: all .7s ease-in;
 }
 
 .in {
   left: 0 !important;
 }
 
+.title-left {
+  margin-left: 0 !important;
+  border-radius: 0 20px 20px 0 !important;
+}
+
+.bars-right {
+  width: 80% !important;
+  right: 0;
+  top: 9px !important;
+}
+
+.prop-close {
+  height: 0 !important;
+}
+
 @media screen and (max-width: 1024px) {
+  .title {
+    margin-left: 0 !important;
+    border-radius: 0 20px 20px 0 !important;
+  }
   .bars {
     display: block !important;
     height: calc(100vh - 51px);
@@ -3583,17 +3643,17 @@ body::-webkit-scrollbar {
   .bars li {
     display: block;
     width: 80%;
-    border-bottom: 1px solid rgba(60, 179, 113, 0.3);
+    border-bottom: 1px solid rgba(255, 250, 240, 0.4);
     margin: auto;
   }
   .bars li:hover {
-    border-bottom: 1px solid rgba(60, 179, 113, 0.3) !important;
+    border-bottom: 1px solid rgba(255, 250, 240, 0.4) !important;
   }
   .bars-bt {
     display: block !important;
   }
-  .title {
-    margin-left: 10px !important;
+  .prop {
+    height: 0 !important;
   }
   .intro {
     padding-top: 51px !important;

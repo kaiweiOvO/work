@@ -1,6 +1,10 @@
 @import './define.scss';
 
 @media screen and (max-width: 1024px){
+    .title {
+        margin-left: 0 !important;
+        border-radius: 0 20px 20px 0 !important;
+    }
     .bars{
         display: block !important;
         height: calc(100vh - 51px);
@@ -12,18 +16,18 @@
         li {
             display: block;
             width: 80%;
-            border-bottom: 1px solid rgba($color: $main-green, $alpha: .3);
+            border-bottom: 1px solid rgba(255,250,240,.4);
             margin: auto;
             &:hover {
-                border-bottom: 1px solid rgba($color: $main-green, $alpha: .3) !important;
+                border-bottom: 1px solid rgba(255,250,240,.4) !important;
             }
         }
     }
     .bars-bt {
         display: block !important;
     }
-    .title {
-        margin-left: 10px !important;
+    .prop {
+        height: 0 !important;
     }
     .intro {
         padding-top: 51px !important;

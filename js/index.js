@@ -1,3 +1,5 @@
+let scrollY = 0
+
 window.onload = function() {
     let swiper = new Swiper('.swiper-container', {
         // effect: 'fade',
@@ -8,8 +10,29 @@ window.onload = function() {
         }
     })
 
-    $('.bars-bt').on('click',()=>{
+    $('.bars-bt').on('click', ()=>{
         $('.bars').toggleClass('in')
     });
+
+    $(window).on('scroll', ()=>{
+        if(window.scrollY > scrollY)
+        {
+            if(!($('.title').hasClass('title-left')))
+            {
+                $('.title').toggleClass('title-left')
+                $('.bars').toggleClass('bars-right')
+                $('.prop').toggleClass('prop-close')
+            }
+        }
+        else {
+            if($('.title').hasClass('title-left'))
+            {
+                $('.title').toggleClass('title-left')
+                $('.bars').toggleClass('bars-right')
+                $('.prop').toggleClass('prop-close')
+            }
+        }
+        scrollY = window.scrollY
+    })
 
 }

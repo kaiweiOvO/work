@@ -18,62 +18,71 @@ body::-webkit-scrollbar {
     position: fixed;
     z-index: 9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background: $main-white;
-    color: $main-font-color;
-    // &:hover > .title {
-    //     margin-left: 0;
-    //     transition: .5s;
-    // }
+    background: $main-green;
     a {text-decoration: none;}
     .title {
         padding: 10px 10px;
+        z-index: 100;
         text-align: center;
         color: $main-green;
+        background-color: $main-white;
+        border-radius: 0 0 20px 20px;
         width: fit-content;
         margin-left: calc((100vw - 142.7px) / 2);
+        position: relative;
         .reg {
-            font-size:10px 10px;
+            font-size:10px;
         }
     }
     .bars-bt {
         position: absolute;
-        height: 31px;
+        height: 29px;
         top: 10px;
         right: 10px;
         display: none;
+        color: $main-white;
         cursor: pointer;
     }
     .bars {
-        width: 100%;
+        width: 100vw;
+        background-color: $main-green;
         display: -webkit-box;
         line-height: 2.5rem;
         display: flex;
         list-style: none;
         text-align: center;
         overflow: hidden;
+        position: absolute;
+        top: 51px;
+        right: 0;
         li {
             line-height: 2.5rem;
             -webkit-box-flex: 1;
                     flex: 1;
                     transition: none;
             &:hover {
-                border-bottom: 3px solid $main-green;
+                border-bottom: 2px solid $main-white;
                 transition: none;
             }
             a {
                 text-decoration: none;
-                color:  #000;
+                color:  $main-white;
             }
         }
+    }
+    .prop {
+        background-color: $main-green;
+        height: 42px;
     }
 }
 .intro {
     background-size: cover;
     height: auto;
-    padding-top: 91px;
+    padding-top: 51px;
     color: $main-font-color;
     .swiper-container {
         width: 100%;
+        background-color: #000;
         max-height: 607px;
         height: calc(100vw * 0.5625);
         text-align: center;

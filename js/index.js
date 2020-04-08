@@ -10,41 +10,41 @@ window.onload = function() {
         }
     })
 
-    $('.bars-bt').on('click', ()=>{
-        $('.bars').toggleClass('in')
-    });
-
-    $(window).on('scroll', ()=>{
-        if(window.scrollY > scrollY)
-        {
-            if(window.innerWidth > 1024)
-            if(!($('.title').hasClass('title-left')))
-            {
-                $('.title').toggleClass('title-left')
-                $('.bars').toggleClass('bars-right')
-                $('.prop').toggleClass('prop-close')
-            }
-        }
-        else {
-            if(window.innerWidth > 1024)
-            if($('.title').hasClass('title-left'))
-            {
-                $('.title').toggleClass('title-left')
-                $('.bars').toggleClass('bars-right')
-                $('.prop').toggleClass('prop-close')
-            }
-        }
-        scrollY = window.scrollY
-    })
-
-    $(window).on('resize', ()=>{
-        if(window.innerWidth <= 1024)
-        if($('.title').hasClass('title-left'))
-            {
-                $('.title').toggleClass('title-left')
-                $('.bars').toggleClass('bars-right')
-                $('.prop').toggleClass('prop-close')
-            }
-    })
-
 }
+
+$('.bars-bt').on('click', ()=>{
+    $('.bars').toggleClass('in')
+});
+
+$(window).on('scroll', ()=>{
+    if(window.scrollY > scrollY)
+    {
+        if(window.innerWidth > 1024)
+        if(!($('.title').hasClass('title-left')))
+        {
+            $('.title').toggleClass('title-left')
+            $('.bars').toggleClass('bars-right')
+            $('.prop').toggleClass('prop-close')
+        }
+    }
+    else {
+        if(window.innerWidth > 1024)
+        if($('.title').hasClass('title-left'))
+        {
+            $('.title').toggleClass('title-left')
+            $('.bars').toggleClass('bars-right')
+            $('.prop').toggleClass('prop-close')
+        }
+    }
+    scrollY = window.scrollY
+})
+
+$(window).on('resize', ()=>{
+    if(window.innerWidth <= 1024)
+    if($('.title').hasClass('title-left'))
+        {
+            $('.title').toggleClass('title-left')
+            $('.bars').toggleClass('bars-right')
+            $('.prop').toggleClass('prop-close')
+        }
+})

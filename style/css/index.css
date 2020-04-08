@@ -3340,6 +3340,11 @@
 
 body {
   background: floralWhite;
+  overflow-y: visible;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .nav {
@@ -3349,6 +3354,10 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background: floralWhite;
   color: #333;
+}
+
+.nav a {
+  text-decoration: none;
 }
 
 .nav .title {
@@ -3369,6 +3378,7 @@ body {
   top: 10px;
   right: 10px;
   display: none;
+  cursor: pointer;
 }
 
 .nav .bars {
@@ -3450,14 +3460,14 @@ body {
   max-width: 1160px;
   margin: auto;
   list-style: none;
-  padding: 20px 0 10px;
+  padding: 20px 0 0;
 }
 
 .contact .contact-wrapper .contact-item {
   display: block;
   text-align: center;
   width: 360px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   cursor: pointer;
 }
 
@@ -3514,8 +3524,9 @@ body {
 }
 
 .contact .copyright {
-  padding-bottom: 30px;
+  padding: 20px 0;
   color: #333;
+  background-color: mediumseagreen;
 }
 
 .contact .sign {
@@ -3548,7 +3559,7 @@ body {
     display: block !important;
     height: calc(100vh - 51px);
     top: 51px;
-    left: 100vw;
+    left: calc(100vw + 10px);
     position: absolute;
     background: floralWhite;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);

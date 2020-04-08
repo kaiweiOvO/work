@@ -24,7 +24,7 @@
     display: block !important;
     height: calc(100vh - 51px);
     top: 51px;
-    left: 100vw;
+    left: calc(100vw + 10px);
     position: absolute;
     background: floralWhite;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);

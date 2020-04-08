@@ -5,6 +5,10 @@
 *{margin: 0;padding: 0;}
 body {
     background: $main-white;
+    overflow-y: visible;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 .nav {
     width: 100vw;
@@ -17,6 +21,7 @@ body {
     //     margin-left: 0;
     //     transition: .5s;
     // }
+    a {text-decoration: none;}
     .title {
         padding: 10px 10px;
         text-align: center;
@@ -33,6 +38,7 @@ body {
         top: 10px;
         right: 10px;
         display: none;
+        cursor: pointer;
     }
     .bars {
         width: 100%;
@@ -108,12 +114,12 @@ body {
         max-width: 1160px;
         margin: auto;
         list-style: none;
-        padding: 20px 0 10px;
+        padding: 20px 0 0;
         .contact-item {
             display: block;
             text-align: center;
             width: 360px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
             cursor: pointer;
             &:hover a i{
                 background-color: $main-green;
@@ -158,8 +164,9 @@ body {
         }
     }
     .copyright {
-        padding-bottom: 30px;
+        padding: 20px 0;
         color: #333;
+        background-color: $main-green;
     }
     .sign {
         color: mediumaquamarine;

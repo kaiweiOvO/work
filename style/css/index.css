@@ -3309,7 +3309,21 @@
   }
 }
 
-.content {
+* {
+  transition: all .5s ease;
+}
+
+.text, .intro, .brand, .product, .contact {
+  text-align: center;
+  overflow: hidden;
+  transition: all .7s ease-in;
+}
+
+.in {
+  left: 0 !important;
+}
+
+.title-wrapper {
   width: 80vw;
   max-width: 1080px;
   height: auto;
@@ -3336,6 +3350,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -3440,6 +3458,11 @@ body::-webkit-scrollbar {
   background-size: cover;
 }
 
+.intro .content-wrapper {
+  width: 100%;
+  max-width: 1160px;
+}
+
 .brand {
   height: 100vh;
 }
@@ -3460,7 +3483,7 @@ body::-webkit-scrollbar {
   max-width: 1160px;
   margin: auto;
   list-style: none;
-  padding: 20px 0 0;
+  padding: 10px 0 0;
 }
 
 .contact .contact-wrapper .contact-item {
@@ -3548,13 +3571,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1024px) {
-  .contact-item {
-    width: 100% !important;
-    float: left;
-  }
-}
-
-@media screen and (max-width: 640px) {
   .bars {
     display: block !important;
     height: calc(100vh - 51px);
@@ -3581,5 +3597,9 @@ body::-webkit-scrollbar {
   }
   .intro {
     padding-top: 51px !important;
+  }
+  .contact-item {
+    width: 100% !important;
+    float: left;
   }
 }

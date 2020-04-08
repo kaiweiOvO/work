@@ -1,12 +1,6 @@
 @import './define.scss';
 
 @media screen and (max-width: 1024px){
-    .contact-item {
-        width: 100% !important;
-        float: left;
-    }
-}
-@media screen and (max-width: 640px){
     .bars{
         display: block !important;
         height: calc(100vh - 51px);
@@ -34,4 +28,11 @@
     .intro {
         padding-top: 51px !important;
     }
+    .contact-item {
+        width: 100% !important;
+        float: left;
+    }
+}
+@media screen and (max-width: 640px){
+
 }

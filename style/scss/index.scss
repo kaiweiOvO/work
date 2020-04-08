@@ -3,6 +3,9 @@
 @import './common.scss';
 
 *{margin: 0;padding: 0;}
+html  {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 body {
     background: $main-white;
     overflow-y: visible;
@@ -93,6 +96,11 @@ body::-webkit-scrollbar {
         
     }
 
+    .content-wrapper {
+        width: 100%;
+        max-width: 1160px;
+    }
+
     @extend .text;
 }
 .brand {
@@ -114,7 +122,7 @@ body::-webkit-scrollbar {
         max-width: 1160px;
         margin: auto;
         list-style: none;
-        padding: 20px 0 0;
+        padding: 10px 0 0;
         .contact-item {
             display: block;
             text-align: center;

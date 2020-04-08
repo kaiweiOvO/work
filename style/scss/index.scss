@@ -19,6 +19,12 @@ body::-webkit-scrollbar {
     z-index: 9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background: $main-green;
+    .watchword {
+        color: $main-white;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
     a {text-decoration: none;}
     .title {
         padding: 10px 10px;

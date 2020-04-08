@@ -42,7 +42,7 @@
   }
   .bars li {
     display: block;
-    width: 80%;
+    width: 70%;
     border-bottom: 1px solid rgba(255, 250, 240, 0.4);
     margin: auto;
   }

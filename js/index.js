@@ -17,6 +17,7 @@ window.onload = function() {
     $(window).on('scroll', ()=>{
         if(window.scrollY > scrollY)
         {
+            if(window.innerWidth > 1024)
             if(!($('.title').hasClass('title-left')))
             {
                 $('.title').toggleClass('title-left')
@@ -25,6 +26,7 @@ window.onload = function() {
             }
         }
         else {
+            if(window.innerWidth > 1024)
             if($('.title').hasClass('title-left'))
             {
                 $('.title').toggleClass('title-left')
@@ -33,6 +35,16 @@ window.onload = function() {
             }
         }
         scrollY = window.scrollY
+    })
+
+    $(window).on('resize', ()=>{
+        if(window.innerWidth <= 1024)
+        if($('.title').hasClass('title-left'))
+            {
+                $('.title').toggleClass('title-left')
+                $('.bars').toggleClass('bars-right')
+                $('.prop').toggleClass('prop-close')
+            }
     })
 
 }

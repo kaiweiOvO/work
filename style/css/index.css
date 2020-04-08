@@ -3401,6 +3401,13 @@ body::-webkit-scrollbar {
   background: mediumseagreen;
 }
 
+.nav .watchword {
+  color: floralWhite;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
 .nav a {
   text-decoration: none;
 }
@@ -3642,7 +3649,7 @@ body::-webkit-scrollbar {
   }
   .bars li {
     display: block;
-    width: 80%;
+    width: 70%;
     border-bottom: 1px solid rgba(255, 250, 240, 0.4);
     margin: auto;
   }

@@ -9,6 +9,7 @@ html  {
 body {
     background: $main-white;
     overflow-y: visible;
+    text-align: center;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -22,7 +23,7 @@ body::-webkit-scrollbar {
     .watchword {
         color: $main-white;
         font-family: 'lisu';
-        font-size: 16px;
+        font-size: 17px;
         position: absolute;
         left: 10px;
         top: 10px;
@@ -33,6 +34,7 @@ body::-webkit-scrollbar {
         z-index: 100;
         text-align: center;
         color: $main-green;
+        font-family: 'lisu';
         background-color: $main-white;
         border-radius: 0 0 20px 20px;
         width: fit-content;
@@ -86,6 +88,7 @@ body::-webkit-scrollbar {
 .intro {
     background-size: cover;
     height: auto;
+    max-width: 1920px;
     padding-top: 51px;
     color: $main-font-color;
     .swiper-container {
@@ -115,6 +118,12 @@ body::-webkit-scrollbar {
     .content-wrapper {
         width: 100%;
         max-width: 1160px;
+        margin: auto;
+        div {
+            img {
+                width: 100%;
+            }
+        }
     }
 
     @extend .text;

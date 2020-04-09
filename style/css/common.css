@@ -5,11 +5,25 @@
 .text {
   text-align: center;
   overflow: hidden;
-  transition: all .7s ease-in;
 }
 
 .in {
   left: 0 !important;
+}
+
+.title-left {
+  margin-left: 0 !important;
+  border-radius: 0 20px 20px 0 !important;
+}
+
+.bars-right {
+  width: 80% !important;
+  right: 0;
+  top: 9px !important;
+}
+
+.prop-close {
+  height: 0 !important;
 }
 
 .title-wrapper {
@@ -19,6 +33,7 @@
   text-align: center;
   margin: 0 auto;
   padding: 20px 0;
+  font-size: 20px;
   animation: fadeInUp 1s forwards;
 }
 
@@ -32,6 +47,6 @@
 
 .bold {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   color: mediumseagreen;
 }

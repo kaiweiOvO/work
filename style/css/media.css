@@ -5,6 +5,7 @@
 .text {
   text-align: center;
   overflow: hidden;
+  font-size: 20px;
 }
 
 .in {

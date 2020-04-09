@@ -1,12 +1,3 @@
-* {
-  transition: all .5s ease;
-}
-
-.text, .intro, .brand, .product, .contact {
-  text-align: center;
-  overflow: hidden;
-}
-
 .in {
   left: 0 !important;
 }
@@ -3323,15 +3314,6 @@
   }
 }
 
-* {
-  transition: all .5s ease;
-}
-
-.text, .intro, .brand, .product, .contact {
-  text-align: center;
-  overflow: hidden;
-}
-
 .in {
   left: 0 !important;
 }
@@ -3351,6 +3333,15 @@
   height: 0 !important;
 }
 
+* {
+  transition: all .5s ease;
+}
+
+.text, .intro, .brand, .product, .contact {
+  text-align: center;
+  overflow: hidden;
+}
+
 .title-wrapper {
   width: 80vw;
   max-width: 1080px;
@@ -3358,7 +3349,7 @@
   text-align: center;
   margin: 0 auto;
   padding: 20px 0;
-  font-size: 20px;
+  font-size: 18px;
   animation: fadeInUp 1s forwards;
 }
 
@@ -3417,8 +3408,8 @@ body::-webkit-scrollbar {
 }
 
 .nav .title {
-  padding: 10px 10px;
-  z-index: 100;
+  padding: 11px 10px 13px 10px;
+  z-index: 9;
   text-align: center;
   color: mediumseagreen;
   font-family: 'lisu';
@@ -3613,15 +3604,6 @@ body::-webkit-scrollbar {
 
 .contact .sign {
   color: mediumaquamarine;
-}
-
-* {
-  transition: all .5s ease;
-}
-
-.text, .intro, .brand, .product, .contact {
-  text-align: center;
-  overflow: hidden;
 }
 
 .in {

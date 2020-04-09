@@ -15,6 +15,7 @@ window.onload = function() {
     });
 }
 
+new WOW().init()
 
 $(window).on('scroll', ()=>{
     if(window.scrollY > scrollY)

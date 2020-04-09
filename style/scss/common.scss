@@ -1,5 +1,14 @@
 @import './define.scss';
 
+* {
+    transition: all .5s ease;
+}
+
+.text {
+    text-align: center;
+    overflow: hidden;
+}
+
 .title-wrapper {
     width: 80vw;
     max-width: 1080px;
@@ -7,7 +16,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 20px 0;
-    font-size: 20px;
+    font-size: 18px;
     animation: fadeInUp 1s forwards;
 }
     
